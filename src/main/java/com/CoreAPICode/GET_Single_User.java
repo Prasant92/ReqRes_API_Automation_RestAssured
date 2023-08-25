@@ -10,7 +10,7 @@ public class GET_Single_User extends CoreClass{
         resp = RestAssured.given(reqspec).
                 pathParam("userID", user_ID).
                 when().
-                get(configPropertiesReader.getUsersPathParam() + "\{userID}").
+                get(configPropertiesReader.getUsersPathParam() + "/{userID}").
                 then().
                 extract().
                 response();
