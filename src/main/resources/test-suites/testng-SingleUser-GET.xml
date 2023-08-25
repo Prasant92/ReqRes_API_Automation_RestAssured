@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="responseTime" value="1000"/>
+    <parameter name="contentType" value="application/json; charset=utf-8"/>
+    <parameter name="statusMessage" value="OK"/>
+    <test verbose="2" preserve-order="true" name="C:/Users/hp/IdeaProjects/ReqResAPIAutomation">
+        <classes>
+            <class name="SingleUserTests.single_User_Status_Code"/>
+        </classes>
+    </test>
+</suite>
